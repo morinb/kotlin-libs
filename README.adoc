@@ -1,0 +1,6 @@
+= Kotlin Libs
+
+https://github.com/morinb/kotlin-libs/actions/workflows/maven.yml[image:https://github.com/morinb/kotlin-libs/actions/workflows/maven.yml/badge.svg?branch=master[Java
+CI with Maven]]
+
+Collections of small libraries for Kotlin.
