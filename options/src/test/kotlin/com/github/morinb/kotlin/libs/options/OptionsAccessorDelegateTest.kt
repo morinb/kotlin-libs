@@ -140,4 +140,25 @@ internal class OptionsAccessorDelegateTest {
         assertEquals(7.toShort(), options.short)
     }
 
+    /**
+     * Test config creation of inexistant filename
+     */
+    @Test
+    @DisplayName("Test getOrCreatConfig with inexistant file")
+    fun inexistantFile() {
+        getOrCreateConfig("inexistant")
+        File("inexistant.conf").delete()
+    }
+
+    /**
+     * Test config creation of already existant filename
+     */
+    @Test
+    @DisplayName("Test getOrCreatConfig with already existant file")
+    fun alreadyExistantFile() {
+        getOrCreateConfig("existant")
+        getOrCreateConfig("existant")
+        File("existant.conf").delete()
+    }
+
 }
